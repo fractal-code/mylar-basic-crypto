@@ -1,11 +1,9 @@
 Package.describe({
-  summary: 'Basic crypto',
+  summary: 'Basic crypto'
 });
 
-Package.on_use(function (api) {
-    where = ['client', 'server'];
-
-    api.add_files(['sjcl.js', 'crypto.js'], where);
+Package.onUse(function (api) {
+    api.addFiles(['sjcl.js', 'crypto.js'], ['client', 'server']);
 
     api.export("sjcl");
     api.export("base_crypto");
