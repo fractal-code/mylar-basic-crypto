@@ -1,5 +1,6 @@
 Package.describe({
     summary: 'Basic crypto',
+    version: '0.0.1',
     name: 'mylar:basic-crypto',
     git: 'https://github.com/gliesesoftware/mylar-basic-crypto.git'
 });
