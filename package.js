@@ -7,7 +7,7 @@ Package.describe({
 
 Package.onUse(function (api) {
 
-    api.use('ejson');
+    api.use(['ejson', 'underscore']);
 
     api.addFiles(['sjcl.js', 'crypto.js'], ['client', 'server']);
 
