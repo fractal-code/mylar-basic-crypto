@@ -6,6 +6,9 @@ Package.describe({
 });
 
 Package.onUse(function (api) {
+
+    api.use('ejson');
+
     api.addFiles(['sjcl.js', 'crypto.js'], ['client', 'server']);
 
     api.export("sjcl");
